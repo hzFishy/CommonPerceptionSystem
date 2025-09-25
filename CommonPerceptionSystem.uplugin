@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "CommonPerceptionSystem",
-	"Description": "A UE plugin that implements common perception systems",
+	"Description": "A UE plugin that implements common AI perception systems",
 	"Category": "Other",
 	"CreatedBy": "hzFishy",
 	"CreatedByURL": "https://hzfishy.fr",
