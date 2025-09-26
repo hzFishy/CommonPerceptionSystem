@@ -1,0 +1,13 @@
+{
+	"nodes":[
+		{"id":"dc2d42e0f50954dd","type":"text","text":"**Common AI Perception Component**\n\n- Set linked **AI Controller** by code (allow the comp to be elsewhere than on the AI Pawn/Controller) and the **AI Perception Component**.\n- Set vars for perception rules (range, etc)\n- Register to the **AI Perception Subsystem**.","x":0,"y":-480,"width":610,"height":300,"color":"6"},
+		{"id":"64c0f2ff26e1259f","type":"text","text":"**Dummy AI Pawn/Controller**\n\nIn a classic setup this would have the **AI Perception Component** and the **Common AI Perception Component**.\n","x":-990,"y":-440,"width":560,"height":220,"color":"6"},
+		{"id":"c0d2970926455282","type":"text","text":"**AI Perception Subsystem**\n\n- Manages the **AI Perception Component** for all AIs.\n- Listen to perception events on the AI","x":0,"y":-20,"width":610,"height":300,"color":"6"},
+		{"id":"bc9d81070d4b1a90","type":"text","text":"**Other Actor that can trigger the sense**\n\nThis contains a **AI Perception Stimuli Source Component**\n","x":-990,"y":-130,"width":560,"height":220,"color":"6"},
+		{"id":"24018ea607019a80","type":"text","text":"**Global Perception System**\n\nThe AI senses you if:\n- it **see**s you\n- it **see**s an object marked as \"linked\" to the player. For example an object pushed by the player, or spawned.\n- If other AIs that meets the above criteria's are close enough (since real humans would \"tell\" others what they saw), this also has an option for testing for in-between collisions\n\nYou then use the senses events to drive your AI behaviours.","x":-520,"y":-840,"width":620,"height":320,"color":"1"}
+	],
+	"edges":[
+		{"id":"bb89263002851680","fromNode":"64c0f2ff26e1259f","fromSide":"right","toNode":"dc2d42e0f50954dd","toSide":"left","label":"Implements"},
+		{"id":"afd951144bfc3383","fromNode":"dc2d42e0f50954dd","fromSide":"bottom","toNode":"c0d2970926455282","toSide":"top","label":"Registers to"}
+	]
+}
